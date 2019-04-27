@@ -1,0 +1,14 @@
+{
+  "name": "concurrent",
+  "version": "1.0.0",
+  "main": "dist/taskRunner.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p . ",
+    "prestart": "yarn build",
+    "start": "node dist/test.js"
+  },
+  "dependencies": {
+    "@types/node": "^11.13.8"
+  }
+}
